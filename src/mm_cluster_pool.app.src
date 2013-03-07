@@ -1,0 +1,15 @@
+{application, mm_cluster_pool,
+ [
+  {description, "Clusterize tools"},
+  {vsn, "1.0.0"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  mm_config,
+                  mm_log,
+                  gproc
+                 ]},
+  {mod, { mm_cluster_pool_app, []}},
+  {env, []}
+ ]}.

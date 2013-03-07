@@ -1,0 +1,10 @@
+{application,mm_cluster_pool,
+             [{description,"Clusterize tools"},
+              {vsn,"1.0.0"},
+              {registered,[]},
+              {applications,[kernel,stdlib,mm_config,mm_log,gproc]},
+              {mod,{mm_cluster_pool_app,[]}},
+              {env,[]},
+              {modules,[cluster_client_sock,cluster_srv_sock,
+                        mm_cluster_pool_app,mm_cluster_pool_sup,
+                        tcp_server_wrapper]}]}.
